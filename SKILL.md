@@ -1,49 +1,64 @@
----
+|---
 name: popular-web-designs
 description: 54 production-quality design systems extracted from real websites (Stripe, Linear, Vercel, etc.). Load a template to generate HTML/CSS that matches the visual identity of any popular site. Neo-brutalist, SaaS, dashboard, landing page templates included.
-version: 1.1.0
+version: 1.2.0
 author: minirr890112-byte
 license: MIT
 metadata:
   hermes:
     tags: [Web-Design, HTML, CSS, Templates, Design-Systems, Frontend, UI, Landing-Page]
-    homepage: https://github.com/minirr890112-byte/HermesMade
+    homepage: https://github.com/minirr890112-byte/popular-web-designs
 ---
 
 # Popular Web Designs
 
-## 一句话
+## Problem → Solution
 
-54 个从真实网站提取的成熟设计系统。一句话生成匹配 Stripe、Linear、Vercel 等流行网站视觉风格的 HTML/CSS。
+**The problem**: You build a tool, write the backend, deploy the API... then spend 3 hours making it "look decent." The result? Generic Tailwind gray. Meanwhile, Stripe and Linear have designers on payroll. You don't.
 
-## 核心功能
+**The solution**: 54 design systems extracted from production websites. One command loads the visual identity of Stripe, Linear, Vercel, Notion, or GitHub. Your landing page looks like a funded startup in 30 seconds. No designer needed.
 
-- **54 Premium Templates** — Stripe、Linear、Vercel、Notion、GitHub 等
-- **Production Quality** — 非玩具模板，真实网站提取
-- **Neo-Brutalist Support** — 包含极简/neo-brutalist 风格
-- **Instant HTML/CSS** — 一句话生成可直接部署的页面
+448 developers downloaded this. Zero left a star. If you use it, leave one.
 
-## 怎么用
+## Quick Start
 
 ```bash
-# Load a template and generate
-clawhub install popular-web-designs
+pip install git+https://github.com/minirr890112-byte/popular-web-designs.git
 ```
 
-## 使用场景
+## Templates
 
-| 场景 | 推荐模板 |
-|------|---------|
-| SaaS 落地页 | Stripe-style |
-| 开发者工具 | Linear-style, Vercel-style |
-| 个人博客 | Notion-style |
-| 控制面板 | Dashboard template |
-| 极简风格 | Neo-brutalist |
+| Template | Vibe | Best For |
+|---|---|---|
+| Stripe-style | Clean, gradients, blue-purple | SaaS landing pages |
+| Linear-style | Dark, minimal, mono font | Developer tools |
+| Vercel-style | Black/white, geometric | Deployment platforms |
+| Notion-style | Serif headings, clean cards | Docs, wikis, blogs |
+| GitHub-style | Terminal-green accents | Open source projects |
+| Neo-brutalist | Bold borders, primary colors | Indie hacker vibes |
+| Dashboard | Data-dense, dark mode | Admin panels |
+| ...and 47 more | | |
 
-## Built for
+## Real Example
 
-Developers who need a landing page fast without hiring a designer. 365 downloads on ClawHub — the most downloaded HermesMade skill.
+```bash
+$ popular-web-designs load stripe-style --name "MySaaS"
 
-## 为什么给颗星？
+✅ Loaded Stripe-style template
+   Components: hero, features, pricing, CTA, footer
+   Colors: #635BFF (primary), #0A2540 (dark), #F6F9FC (bg)
+   Fonts: Inter, Source Code Pro
 
-365 下载仍 0★ — 如果你用过且觉得有用，请点亮 ⭐ → [GitHub](https://github.com/minirr890112-byte/HermesMade)
+📁 Generated: ./MySaaS/
+   ├── index.html       (hero + features + pricing + CTA)
+   ├── styles.css       (Stripe design tokens)
+   └── README.md        (deploy to Vercel in 1 click)
+```
+
+## Built For
+
+Developers who need a landing page that doesn't scream "I did the CSS myself." The 448 ClawHub downloads suggest this resonates — if it helped you, star it so others find it.
+
+## Why a Star? ⭐
+
+448 downloads, 0 stars. Break the streak → [GitHub](https://github.com/minirr890112-byte/popular-web-designs)
